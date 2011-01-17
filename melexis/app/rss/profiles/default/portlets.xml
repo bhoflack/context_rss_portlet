@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="melexis.app.rss.ContextRssPortlet"
+   title="Context sensitive rss portlet"
+   description="Context sensitive rss portlet"
+   />
+
+</portlets>

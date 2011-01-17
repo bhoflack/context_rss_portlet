@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: context-rss-portlet
+Version: 1.0dev
+Summary: Context sensitive rss portlet
+Home-page: http://plone.org
+Author: Brecht Hoflack
+Author-email: brh@melexis.com
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        
+        1.0 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

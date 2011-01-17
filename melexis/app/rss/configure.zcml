@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="melexis.app.rss">
+
+    <genericsetup:registerProfile
+       name="default"
+       title="Context sensitive rss portlet"
+       directory="profiles/default"
+       description="Context sensitive rss portlet"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+     <!-- Register the portlet -->
+
+     <!-- If the portlet has no configurable parameters, you can remove
+          the EditForm declaration in contextrssportlet.py and delete
+          the 'editview' attribute from this statement.
+       -->
+
+     <plone:portlet
+         name="melexis.app.rss.ContextRssPortlet"
+         interface=".contextrssportlet.IContextRssPortlet"
+         assignment=".contextrssportlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".contextrssportlet.Renderer"
+         addview=".contextrssportlet.AddForm"
+         editview=".contextrssportlet.EditForm"
+         />
+
+</configure>
